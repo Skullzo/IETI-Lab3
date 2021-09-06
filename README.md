@@ -1,6 +1,3 @@
-<img align="right" src="https://github.com/ada-school/module-template/blob/main/ada.png">
-
-
 ## Spring Boot Security with JWT
 
 Secure your REST API using Spring Security with JWT.
