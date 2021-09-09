@@ -11,10 +11,10 @@ public interface UserService
     User create( UserDto userDto );
 
     User findById( String id )
-        throws UserNotFoundException;
+            throws UserNotFoundException;
 
     User findByEmail( String email )
-        throws UserNotFoundException;
+            throws UserNotFoundException;
 
     List<User> all();
 

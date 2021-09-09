@@ -4,7 +4,7 @@ import org.ada.school.exception.ServerErrorResponseDto;
 import org.springframework.http.HttpStatus;
 
 public class InternalServerErrorException
-    extends RuntimeException
+        extends RuntimeException
 {
 
     private final ServerErrorResponseDto serverErrorResponseDto;

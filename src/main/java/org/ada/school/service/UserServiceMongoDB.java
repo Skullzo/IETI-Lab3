@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @Service
 public class UserServiceMongoDB
-    implements UserService
+        implements UserService
 {
 
     private final UserRepository userRepository;
@@ -44,7 +44,7 @@ public class UserServiceMongoDB
 
     @Override
     public User findByEmail( String email )
-        throws UserNotFoundException
+            throws UserNotFoundException
     {
         Optional<User> optionalUser = userRepository.findByEmail( email );
         if ( optionalUser.isPresent() )
