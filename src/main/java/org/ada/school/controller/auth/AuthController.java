@@ -38,7 +38,6 @@ public class AuthController
     }
 
     @PostMapping("/user")
-    //@RolesAllowed("ADMIN")
     public TokenDto login( @RequestBody LoginDto loginDto )
     {
         User user = userService.findByEmail( loginDto.email );
@@ -56,7 +55,7 @@ public class AuthController
     private String generateToken( User user, Date expirationDate)
     {
         String token= Jwts.builder()
-                .setSubject( "Works" )
+                .setSubject( "It Works !" )
                 .claim( CLAIMS_ROLES_KEY, user.getRoles() )
                 .setIssuedAt(new Date() )
                 .setExpiration( expirationDate )
